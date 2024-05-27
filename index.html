@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Gaming Survey Form</h1>
+    <p id="description">
+      Thank you for taking your time out to help us improve our games
+    </p>
+    <form id="survey-form" action="submit" method="POST">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Name
+          <input
+            id="name"
+            type="text"
+            required
+            placeholder="Please enter your name"
+        /></label>
+        <label for="email" id="email-label"
+          >Email<input
+            id="email"
+            type="email"
+            required
+            placeholder="Please enter your email"
+        /></label>
+        <label for="age" id="number-label"
+          >Age<input
+            id="number"
+            type="number"
+            required
+            min="12"
+            max="60"
+            placeholder="Please enter your age"
+        /></label>
+        <label
+          >Which game do you think is better
+          <select id="dropdown">
+            <option value="">Select the best game in your opinion</option>
+            <option value="1">Wuthering Waves</option>
+            <option value="2">Genshin Impact</option>
+            <option value="3">Honkai Star Rail</option>
+            <option value="4">Summoners Wars</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p>Would you suggest any of these games to a friend</p>
+        <label for="Yes-option"
+          ><input id="yes-option" type="radio" name="option" value="yes" />
+          Yes</label
+        >
+        <label for="No-option"
+          ><input id="no-option" type="radio" name="option" value="no" />
+          No</label
+        >
+        <label
+          >What is your favourite feature from these games
+          <select id="dropdown">
+            <option value="">Select a feature</option>
+            <option value="1">Story</option>
+            <option value="2">Combat</option>
+            <option value="3">Character Design</option>
+            <option value="4">Exploration</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="feature-improv"
+          >What features would you like to see be improved (check all that
+          apply)
+        </label>
+        <label for="combat"
+          ><input type="checkbox" value="checked" required value="combat" />
+          Combat
+        </label>
+        <label for="exploration"
+          ><input
+            type="checkbox"
+            value="checked"
+            required
+            value="exploration"
+          />
+          Exploration
+        </label>
+        <label for="puzzles"
+          ><input type="checkbox" value="checked" required value="puzzles" />
+          Puzzles
+        </label>
+        <label for="story"
+          ><input type="checkbox" value="checked" required value="story" />
+          Story
+        </label>
+        <label for="character-des"
+          ><input
+            type="checkbox"
+            value="checked"
+            required
+            value="character-des"
+          />
+          Character-design
+        </label>
+        <label for="animations"
+          ><input type="checkbox" value="checked" required value="animations" />
+          Animations
+        </label>
+        <label for="cut-scenes"
+          ><input type="checkbox" value="checked" required value="cut-scenes" />
+          Cut Scenes
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="suggestions"
+          >Suggest your ideas for improvement<textarea
+            placeholder="Suggestions"
+            required
+            rows="3"
+            cols="50"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
